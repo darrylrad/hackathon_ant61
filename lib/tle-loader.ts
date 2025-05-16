@@ -1,0 +1,72 @@
+// This file would fetch TLE data from a source like CelesTrak
+// For the hackathon, we'll use a simplified approach with sample data
+
+interface TLEData {
+  name: string
+  line1: string
+  line2: string
+}
+
+// Sample Iridium TLE data (this would be replaced with actual data)
+const sampleTLEData: TLEData[] = [
+  {
+    name: "IRIDIUM 8",
+    line1: "1 24792U 97020A   23136.49913126  .00000075  00000-0  19738-4 0  9992",
+    line2: "2 24792  86.4029 183.4943 0002085  79.3900 280.7525 14.34217810366163",
+  },
+  {
+    name: "IRIDIUM 9",
+    line1: "1 24793U 97020B   23136.55913126  .00000075  00000-0  19738-4 0  9993",
+    line2: "2 24793  86.4029 183.4943 0002085  79.3900 280.7525 14.34217810366164",
+  },
+  {
+    name: "IRIDIUM 10",
+    line1: "1 24794U 97020C   23136.61913126  .00000075  00000-0  19738-4 0  9994",
+    line2: "2 24794  86.4029 183.4943 0002085  79.3900 280.7525 14.34217810366165",
+  },
+  {
+    name: "IRIDIUM 11",
+    line1: "1 24795U 97020D   23136.67913126  .00000075  00000-0  19738-4 0  9995",
+    line2: "2 24795  86.4029 183.4943 0002085  79.3900 280.7525 14.34217810366166",
+  },
+  {
+    name: "IRIDIUM 12",
+    line1: "1 24796U 97020E   23136.73913126  .00000075  00000-0  19738-4 0  9996",
+    line2: "2 24796  86.4029 183.4943 0002085  79.3900 280.7525 14.34217810366167",
+  },
+  {
+    name: "IRIDIUM 13",
+    line1: "1 24797U 97020F   23136.79913126  .00000075  00000-0  19738-4 0  9997",
+    line2: "2 24797  86.4029 183.4943 0002085  79.3900 280.7525 14.34217810366168",
+  },
+  {
+    name: "IRIDIUM 14",
+    line1: "1 24798U 97020G   23136.85913126  .00000075  00000-0  19738-4 0  9998",
+    line2: "2 24798  86.4029 183.4943 0002085  79.3900 280.7525 14.34217810366169",
+  },
+  {
+    name: "IRIDIUM 15",
+    line1: "1 24799U 97020H   23136.91913126  .00000075  00000-0  19738-4 0  9999",
+    line2: "2 24799  86.4029 183.4943 0002085  79.3900 280.7525 14.34217810366170",
+  },
+  {
+    name: "IRIDIUM 16",
+    line1: "1 24800U 97020J   23136.97913126  .00000075  00000-0  19738-4 0  9990",
+    line2: "2 24800  86.4029 183.4943 0002085  79.3900 280.7525 14.34217810366171",
+  },
+  {
+    name: "IRIDIUM 17",
+    line1: "1 24801U 97020K   23137.03913126  .00000075  00000-0  19738-4 0  9991",
+    line2: "2 24801  86.4029 183.4943 0002085  79.3900 280.7525 14.34217810366172",
+  },
+]
+
+export async function fetchTLEData(): Promise<TLEData[]> {
+  // In a real implementation, you would fetch from CelesTrak or similar
+  // For the hackathon, we'll return sample data
+
+  // Simulate network delay
+  await new Promise((resolve) => setTimeout(resolve, 1000))
+
+  return sampleTLEData
+}
