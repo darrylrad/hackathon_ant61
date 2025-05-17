@@ -1,0 +1,10 @@
+{
+  "node_modules/.pnpm/@react-three+drei@10.0.7_f426bbe7083438fcc8e55b0fe25daf7c/node_modules/@react-three/drei/core/VideoTexture.js -> hls.js": {
+    "id": null,
+    "files": []
+  },
+  "node_modules/.pnpm/@react-three+drei@10.0.7_f426bbe7083438fcc8e55b0fe25daf7c/node_modules/@react-three/drei/web/FaceLandmarker.js -> @mediapipe/tasks-vision": {
+    "id": null,
+    "files": []
+  }
+}
