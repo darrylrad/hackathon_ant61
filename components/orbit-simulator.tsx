@@ -102,8 +102,9 @@ const Scene = () => {
 
   return (
     <>
-      <ambientLight intensity={0.1} />
-      <pointLight position={[100000, 0, 0]} intensity={1.5} />
+      <ambientLight intensity={0.3} />
+      <directionalLight position={[100000, 10000, 50000]} intensity={1.5} />
+      <hemisphereLight args={[0x3284ff, 0xffc87f, 0.6]} />
 
       <Suspense fallback={null}>
         <Earth />

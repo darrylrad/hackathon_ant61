@@ -6,7 +6,7 @@ import { Sphere } from "@react-three/drei"
 import * as THREE from "three"
 
 export default function Earth() {
-  const earthRef = useRef<any>()
+  const earthRef = useRef<any>(null)
 
   // Load Earth textures
   // PLACEHOLDER: Replace these URLs with actual texture URLs
@@ -27,6 +27,12 @@ export default function Earth() {
 
   return (
     <group>
+      {/* Add ambient light to ensure Earth is visible */}
+            <ambientLight intensity={0.3} />
+
+      {/* Add directional light to simulate sun */}
+      <directionalLight position={[100000, 10000, 50000]} intensity={1.5} castShadow />
+
       {/* Earth sphere */}
       <Sphere ref={earthRef} args={[6371, 64, 64]}>
         <meshPhongMaterial

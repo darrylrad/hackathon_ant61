@@ -68,6 +68,8 @@ export default function ControlPanel() {
             onChange={(e) => setAltitude(e.target.value)}
             min="200"
             max="2000"
+            className="text-white bg-slate-800 border-slate-700"
+
           />
         </div>
 
@@ -82,6 +84,8 @@ export default function ControlPanel() {
               min="0"
               max="24"
               step="0.5"
+              className="text-white bg-slate-800 border-slate-700"
+
             />
           </div>
         ) : (
@@ -94,6 +98,8 @@ export default function ControlPanel() {
               onChange={(e) => setInclination(e.target.value)}
               min="0"
               max="180"
+              className="text-white bg-slate-800 border-slate-700"
+
             />
           </div>
         )}
