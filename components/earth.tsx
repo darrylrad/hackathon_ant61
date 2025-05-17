@@ -12,10 +12,10 @@ export default function Earth() {
   // PLACEHOLDER: Replace these URLs with actual texture URLs
   // You can find Earth textures at: https://www.solarsystemscope.com/textures/
   const [colorMap, normalMap, specularMap, cloudsMap] = useLoader(THREE.TextureLoader, [
-    "/placeholder.svg?height=2048&width=4096", // Replace with: '/textures/earth_daymap.jpg'
-    "/placeholder.svg?height=2048&width=4096", // Replace with: '/textures/earth_normal.jpg'
-    "/placeholder.svg?height=2048&width=4096", // Replace with: '/textures/earth_specular.jpg'
-    "/placeholder.svg?height=2048&width=4096", // Replace with: '/textures/earth_clouds.jpg'
+    "/textures/earth_daymap.jpg", // Replace with: '/textures/earth_daymap.jpg'
+    "/textures/earth_normal.jpg", // Replace with: '/textures/earth_normal.jpg'
+    "/textures/earth_specular.jpg", // Replace with: '/textures/earth_specular.jpg'
+    "/textures/earth_clouds.jpg", // Replace with: '/textures/earth_clouds.jpg'
   ])
 
   useFrame(() => {

@@ -1,6 +1,3 @@
-// This file would fetch TLE data from a source like CelesTrak
-// For the hackathon, we'll use a simplified approach with sample data
-
 interface TLEData {
   name: string
   line1: string
