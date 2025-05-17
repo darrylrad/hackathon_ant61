@@ -1238,12 +1238,12 @@ video {
 .border-primary {
   border-color: hsl(var(--primary));
 }
-.border-transparent {
-  border-color: transparent;
-}
 .border-slate-700 {
   --tw-border-opacity: 1;
   border-color: rgb(51 65 85 / var(--tw-border-opacity, 1));
+}
+.border-transparent {
+  border-color: transparent;
 }
 .border-l-transparent {
   border-left-color: transparent;

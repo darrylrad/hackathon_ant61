@@ -147,7 +147,7 @@ const Scene = () => {
         />
       ))}
 
-      <OrbitControls enablePan={true} enableZoom={true} enableRotate={true} minDistance={7000} maxDistance={20000} />
+      <OrbitControls enablePan={true} enableZoom={false} enableRotate={true} minDistance={20000} maxDistance={20000} />
     </>
   )
 }
@@ -167,7 +167,7 @@ export default function OrbitSimulator() {
   return (
     <div className="w-full h-full">
       <Canvas
-        camera={{ position: [0, 0, 15000], fov: 45 }}
+        camera={{ position: [0, 0, 15000], fov: 45, near: 100, far: 100000 }}
         performance={{ min: 0.5 }} // Performance optimization
         gl={{ antialias: true, alpha: false, powerPreference: "high-performance" }}
       >
